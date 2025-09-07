@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Malla Curricular – Enfermería</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Curricular – Enfermería</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>Malla Curricular – Enfermería (UNJFSC)</h1>
+    <input type="text" id="busqueda" placeholder="Buscar curso..." />
+    <select id="filtroCiclo">
+      <option value="">Todos los ciclos</option>
+    </select>
+  </header>
+
+  <main class="container" id="malla"></main>
+
+  <aside id="panel" class="side-panel hidden"></aside>
+
+  <footer>
+    <p>Plan de estudios N°06 · Escuela Ac
